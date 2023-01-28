@@ -1,0 +1,62 @@
+Classe: 
+conjunto de objetos com caracteristicas similares 
+
+	class Carro {
+
+	}
+
+
+Atributos: 
+elemento de uma classe responsável por definir a estrura de dados da classe 
+
+	class Carro {
+		int portas;
+	}
+
+
+Metodo: 
+uma (porcao) sub-rotina que é disponibilizado pela classe, executado quando é feita a requisição.
+
+	class Carro {
+		void frear(){
+		}
+	}
+
+
+Metodos contrutores:
+constroi objetos a partir das classes 
+no java é obrigatorio ser o mesmo nome da classe
+
+	class Carro {
+		Carro() {
+		}
+	}
+
+
+Metodos destrutor: 
+auxilia a destruoicao de um objeto, tornando o metodo volatil em caso de desuso
+finalize(): palavra selecionada, juntamente com void
+
+	class Carro {
+		void finalize() {
+		}
+	}	
+
+
+Sobrecarga: 
+mudanca de assinatura(parametros + nome) de acordo com a necessidade
+
+m1()
+m1(int i)
+
+
+Get e Set: 
+set: colocar um valor em um atributo, via this 
+get: retorno do metodo
+
+
+Ordem de boa pratica: 
+atributos 
+contrutores
+gets e sets
+metodos de negocios
