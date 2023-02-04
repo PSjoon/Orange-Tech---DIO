@@ -60,3 +60,25 @@ atributos
 contrutores
 gets e sets
 metodos de negocios
+
+
+*relacoes
+**heranca
+relacionamento onde há uma extensão da classe pai para a filha
+sendo B a pai
+	class A extends B {
+
+	}
+
+Heranca simples:
+	A classe filha possui somente uma mae
+
+Heranca multipla (nao possuindo em java):
+	A classe filha possui uma ou mais classe mae
+
+
+Poimorfismo: 
+mesma acao que SEMPRE se comporta diferente, uma unica coisa onde tem sempre variacoes
+
+Sobrescrita: 
+mesma acao PODENDO se comportar diferente, uma unica coisa onde pode ter variacoes
