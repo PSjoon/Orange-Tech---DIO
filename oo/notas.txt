@@ -1,4 +1,4 @@
-Classe: 
+*Classe 
 conjunto de objetos com caracteristicas similares 
 
 	class Carro {
@@ -6,7 +6,7 @@ conjunto de objetos com caracteristicas similares
 	}
 
 
-Atributos: 
+*Atributos
 elemento de uma classe responsável por definir a estrura de dados da classe 
 
 	class Carro {
@@ -14,7 +14,7 @@ elemento de uma classe responsável por definir a estrura de dados da classe
 	}
 
 
-Metodo: 
+*Metodo
 uma (porcao) sub-rotina que é disponibilizado pela classe, executado quando é feita a requisição.
 
 	class Carro {
@@ -23,7 +23,7 @@ uma (porcao) sub-rotina que é disponibilizado pela classe, executado quando é 
 	}
 
 
-Metodos contrutores:
+**Metodos contrutores
 constroi objetos a partir das classes 
 no java é obrigatorio ser o mesmo nome da classe
 
@@ -33,7 +33,7 @@ no java é obrigatorio ser o mesmo nome da classe
 	}
 
 
-Metodos destrutor: 
+**Metodos destrutor
 auxilia a destruoicao de um objeto, tornando o metodo volatil em caso de desuso
 finalize(): palavra selecionada, juntamente com void
 
@@ -43,7 +43,7 @@ finalize(): palavra selecionada, juntamente com void
 	}	
 
 
-Sobrecarga: 
+*Sobrecarga
 mudanca de assinatura(parametros + nome) de acordo com a necessidade
 
 m1()
@@ -55,30 +55,95 @@ set: colocar um valor em um atributo, via this
 get: retorno do metodo
 
 
-Ordem de boa pratica: 
+*Ordem de boa pratica
 atributos 
 contrutores
 gets e sets
 metodos de negocios
 
 
-*relacoes
-**heranca
+*Relacoes
+**Heranca:
 relacionamento onde há uma extensão da classe pai para a filha
 sendo B a pai
 	class A extends B {
 
 	}
 
-Heranca simples:
+***Heranca simples:
 	A classe filha possui somente uma mae
 
-Heranca multipla (nao possuindo em java):
+***Heranca multipla (nao possuindo em java):
 	A classe filha possui uma ou mais classe mae
 
 
-Poimorfismo: 
+*Poimorfismo 
 mesma acao que SEMPRE se comporta diferente, uma unica coisa onde tem sempre variacoes
 
-Sobrescrita: 
+*Sobrescrita
 mesma acao PODENDO se comportar diferente, uma unica coisa onde pode ter variacoes
+
+
+*Associacao
+relacionamento entre classes/objetos onde possam pedir ajuda a outras classes/obj para completar suas tarefas
+
+**Tipos de associacao:
+***Estrutural: 
+composicao:
+uma parte depende de um todo
+
+	class Pessoa {
+		Endereco endereco;
+	}
+
+agregacao:
+oposto da composicao, uma parte NAO depende de um todo, se o todo deixar de existir nao ira afetar a parte
+
+	class Disciplina{
+		Aluno aluno;
+	}
+
+***Comportamental:
+dependencia:
+uma parte pode ou nao ser usada no todo, 
+	
+	class Compra {
+	...
+		finalizar(Cupom cupom,...)
+	...
+	} 
+
+*Interface
+Quando a classe implementa uma interface, ela e obrigada a usar todos os comportamentos que a interface disponibiliza
+
+	interface A {
+		...
+	}
+	
+	class B implements A { 
+	
+	}
+
+
+*Pacotes
+organizacao logica ou fisica feita para separar classes distintas
+criar pacote:
+	package ...;
+
+atribui o pacote a pagina:
+	import ...;
+
+*Visibilidade - modificadores de acesso
+determina até que ponto uma classe, atributo ou metodo pode ser usada
+
+**Tipos de visibilidade:
+private: 
+visiveis somente dentro da classe
+
+protected: 
+visivel so por heranca ou no mesmo pacote
+
+public: 
+escopo global
+
+
